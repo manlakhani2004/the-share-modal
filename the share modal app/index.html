@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="wrapper">
+
+        <!-- two circle -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <!-- profile wrapper -->
+        <div class="profilewrapper">
+            <div>
+            <img src="images/IMG_7979.jpeg" alt="" height="150px" width="150px" class="myphoto">
+            </div>
+            <h1 class="myname">Man Lakhani</h1>
+            <p>BCA STUDENT</p>
+
+            <!-- share button and follow -->
+            <div class="button-container">
+                <!-- share button -->
+                <button class="button1" onclick="openmodal()">
+                    <i class="fa-solid fa-share"></i>
+                    &nbsp;Share My Profile
+                </button>
+                <!-- follow button -->
+                <button class="button2">
+                    Follow Me
+                </button>
+            </div>
+        </div>
+
+
+        <!--************ modal code**********  -->
+        <div class="modalwrapper">
+            <div class="header">
+                <div>
+                Share My Profile
+                </div>
+                <div style="cursor: pointer;" onclick="closemodal()">
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+            </div>
+            <h2>Share this via</h2>
+            <div class="links">
+                <a href="https://www.facebook.com" class="sharelink" id="facebook" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https:www.twitter.com" class="sharelink" id="twitter" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" class="sharelink" id="instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.whatsapp.com" class="sharelink" id="whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.telegram.com" class="sharelink" id="telegram" target="_blank">
+                   <i class="fa-brands fa-telegram" ></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay" onclick="closemodal()"></div>
+
+    </section>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
